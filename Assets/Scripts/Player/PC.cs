@@ -1,3 +1,7 @@
+// PlayerController (PC) - Controls all of Aero's movement and abilities
+// Features: horizontal movement, single jump, double jump, glide, wind dash
+// Uses Unity 6 new Input System (Keyboard.current)
+// Author: Daniel Andres Castro Silva - UNAD 213027A - 2026
 using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
