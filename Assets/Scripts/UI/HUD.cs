@@ -1,3 +1,7 @@
+// HUDController (HUD) - Manages all UI elements during gameplay
+// Displays: heart lives, crystal counter, dash energy bar, pause/gameover panels
+// Subscribes to GameManager events via C# event System.Action
+// Author: Daniel Andres Castro Silva - UNAD 213027A - 2026
 using UnityEngine;
 using UnityEngine.UI;
 public class HUD : MonoBehaviour {
