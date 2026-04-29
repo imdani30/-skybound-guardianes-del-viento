@@ -1,3 +1,7 @@
+// NeblinAI (NB) - Enemy artificial intelligence for Neblin creatures
+// Two-state FSM: Patrol (waypoint pendular movement) and Chase (player pursuit)
+// Detection uses Physics2D.OverlapCircle with configurable radius
+// Author: Daniel Andres Castro Silva - UNAD 213027A - 2026
 using UnityEngine;
 public class NB : MonoBehaviour {
     public Transform ptA, ptB;
