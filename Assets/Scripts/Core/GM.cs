@@ -1,3 +1,7 @@
+// GameManager (GM) - Singleton that controls game state
+// Manages: player lives, crystal count, pause system and scene transitions
+// Persists across scenes using DontDestroyOnLoad
+// Author: Daniel Andres Castro Silva - UNAD 213027A - 2026
 using UnityEngine;
 using System.Collections;
 public class GM : MonoBehaviour {
