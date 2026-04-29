@@ -1,0 +1,23 @@
+CARPETA: Assets/AnimatorControllers/
+=====================================
+Esta carpeta empieza VACIA. Los Animator Controllers se generan automaticamente
+con un script del proyecto.
+
+COMO GENERARLOS:
+  1. Asegurate de que los scripts ya compilaron (sin errores en Console)
+  2. En la barra de menus de Unity ve a: Skybound > Create Animator Controllers > Aero (Player)
+  3. Luego: Skybound > Create Animator Controllers > Neblin (Enemy)
+  4. Se crean dos archivos .controller en esta carpeta:
+       Aero_AnimatorController.controller
+       Neblin_AnimatorController.controller
+
+COMO ASIGNARLOS:
+  - Abre el prefab Aero (doble clic en Assets/Prefabs/Aero.prefab)
+  - En el componente Animator > campo Controller
+  - Arrastra Aero_AnimatorController desde esta carpeta
+  - Repite para el prefab Neblin con Neblin_AnimatorController
+
+DESPUES DE ASIGNAR EL CONTROLLER:
+  Abre el controller (doble clic) para ver el grafo de estados.
+  Cada estado (Idle, Run, Jump, etc.) necesita un clip de animacion (.anim).
+  Si no tienes clips todavia, el juego funciona sin animaciones mientras pruebas.

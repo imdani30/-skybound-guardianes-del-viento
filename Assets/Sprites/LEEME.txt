@@ -1,0 +1,28 @@
+CARPETA: Assets/Sprites/
+=========================
+Esta carpeta viene VACIA. Aqui pon los sprites del juego.
+
+Subcarpetas:
+  Sprites/
+    Aero/        ← spritesheet de Aero (personaje principal)
+    Enemies/     ← spritesheet de Neblin (enemigo)
+    Platforms/   ← tiles de plataformas, suelos, islas flotantes
+    UI/          ← sprites de corazones, icono de cristal, botones
+
+DONDE CONSEGUIR SPRITES GRATIS (CC0 - sin restricciones):
+  1. kenney.nl/assets   → busca "Platformer Pack Redux" (RECOMENDADO)
+  2. opengameart.org    → busca "pixel platformer"
+  3. itch.io/game-assets/free/tag-pixel-art
+
+CONFIGURACION AL IMPORTAR en Unity:
+  Selecciona la imagen > Inspector:
+    Texture Type     = Sprite (2D and UI)
+    Filter Mode      = Point (no filter)   ← MUY IMPORTANTE para pixel art
+    Pixels Per Unit  = 32
+    Compression      = None
+  Haz clic en Apply
+
+Si es un spritesheet (varios frames en una imagen):
+    Sprite Mode      = Multiple
+    Luego clic en Sprite Editor > Slice > Grid By Cell Size
+    Cell Size        = 32x48 para Aero, 24x24 para Neblin

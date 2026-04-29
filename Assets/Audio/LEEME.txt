@@ -1,0 +1,48 @@
+CARPETA: Assets/Audio/
+=======================
+Esta carpeta viene VACIA. Aqui pon los archivos de audio.
+
+Subcarpetas:
+  Audio/
+    SFX/    ← efectos de sonido cortos (.wav recomendado)
+    Music/  ← musica de fondo en loop (.ogg recomendado)
+
+ARCHIVOS QUE NECESITAS (nombres sugeridos):
+  SFX/
+    sfx_jump.wav          ← sonido al saltar
+    sfx_dash.wav          ← sonido del impulso de viento
+    sfx_hurt.wav          ← sonido al recibir dano
+    sfx_crystal.wav       ← sonido al recoger un cristal (campanilla)
+    sfx_checkpoint.wav    ← sonido al activar un checkpoint
+    sfx_portal_open.wav   ← sonido cuando el portal se abre
+    sfx_portal_enter.wav  ← sonido al entrar al portal
+    sfx_level_complete.wav← fanfarria de nivel completado
+    sfx_game_over.wav     ← musica triste de game over
+    sfx_ui_click.wav      ← sonido de boton del menu
+
+  Music/
+    bgm_main_menu.ogg         ← musica del menu principal
+    bgm_isla_del_amanecer.ogg ← musica del Nivel 1
+    bgm_bosque_de_nubes.ogg   ← musica del Nivel 2
+    bgm_torre_del_viento.ogg  ← musica del Nivel 3
+
+DONDE CONSEGUIR AUDIO GRATIS:
+  SFX:   freesound.org  |  sfxr.me (generador online, 2 min por sonido)
+         kenney.nl/assets (categoria Audio, pack "Interface Sounds")
+  Music: pixabay.com/music/search/video-game
+         opengameart.org  |  incompetech.com
+
+CONFIGURACION AL IMPORTAR en Unity:
+  SFX (efectos cortos):
+    Load Type       = Decompress On Load
+    Compression     = PCM o Vorbis
+  Musica (loops largos):
+    Load Type       = Compressed In Memory
+    Compression     = Vorbis
+    Load In Background = Activado
+
+COMO ASIGNAR AL AudioManager:
+  1. Abre la escena MainMenu
+  2. Selecciona el GameObject GameSystems
+  3. En el Inspector del componente AudioManager
+  4. Arrastra cada archivo de audio al campo correspondiente
